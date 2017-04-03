@@ -1,0 +1,10 @@
+﻿<div style="height:700px">
+    <div style="font-size: 1.5rem;line-height: 40px;" ng-repeat="message in allmessages" ng-style="{'background-color': '{{message.color}}'}">
+        {{message.message}}
+    </div>
+    <div style="background-color:#FFFFFF; position:fixed;bottom:50px; width:650px; left: 50%; margin-left:-325px;">
+        <textarea id="myText" rows="3" cols="50"></textarea>
+        <button style="margin-top:25px" class="btn btn--m btn--blue btn--raised" lx-ripple ng-click="sendMessage()">Send</button>
+    </div>
+    
+</div>

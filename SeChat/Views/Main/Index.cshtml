@@ -1,0 +1,44 @@
+﻿@{
+
+}
+
+<div class="header">
+    <div class="logo-keeper">
+        <div class="logo" ui-sref="main"></div>
+    </div>
+    <nav class="container" ng-controller="HomeCtrl">
+        <div class="navicons" layout-align="end start" layout-gt-sm="row">
+            <div class="email">@ViewBag.Email</div>
+            <div layout="row" layout-align="end start" layout-align-sm="center center">
+                <div><button class="btn btn--m btn--blue" lx-ripple type="button" ui-sref="profile" ng-class="getCurrentState('profile')"><i class="mdi mdi-account"></i></button></div>
+                <div><button class="btn btn--m btn--blue" lx-ripple type="button" ui-sref="settings" ng-class="getCurrentState('settings')"><i class="mdi mdi-settings"></i></button></div>
+                <div><button class="btn btn--m btn--blue btn--icon" lx-ripple type="button" onclick="location.href='@Url.Action("Index", "Home", new { isSignOut = true})'"><i class="mdi mdi-logout"></i></button></div>
+            </div>
+        </div>
+        <div layout="row" layout-sm="column" layout-md="column" layout-align-md="end end">
+            <div class="menu" flex="70" flex-order-sm="2" flex-order="1" flex-sm="100" flex-md="100" flex-order-md="2">
+                <ul class="nav">
+                    <li><button class="btn btn--m btn--blue" lx-ripple ui-sref="myvideos" ng-class="getCurrentState('myvideos')">My Videos</button></li>
+                    <li><button class="btn btn--m btn--blue" lx-ripple ui-sref="subs" ng-class="getCurrentState('subs.mysubs')">Subs</button></li>
+                </ul>
+            </div>
+            <div class="searchfield" flex="30" flex-order-sm="1" flex-order="2" flex-sm="100" flex-md="100" flex-order-md="1">
+                <div flex-item>
+                    <lx-text-field label="Search">
+                        <input type="text" ng-model="search">
+                    </lx-text-field>
+                </div>
+            </div>
+        </div>
+    </nav>
+</div>
+
+<div ui-view autoscroll="false" class="div">
+    
+</div>
+
+<div class="footer" layout="row" layout-align="space-around center">
+    <div>About</div>
+    <div>copyright</div>
+    <div>socials</div>
+</div>

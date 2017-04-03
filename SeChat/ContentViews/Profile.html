@@ -1,0 +1,74 @@
+﻿<div class="dark-div" ng-click="showHideMenu()"></div>
+<div class="container content set">
+    <div class="mobile-header" layout="row" layout-align="space-between center" hide-gt-sm>
+        <button type="button" class="btn btn--m btn--blue btn--icon" ng-click="showHideMenu()">
+            <i class="mdi mdi-menu"></i>
+        </button>
+        <h2>Profile</h2>
+        <div style="width:41px"></div>
+    </div>
+    <div layout="column" class="mainsettingsblock">
+        <div class="settingsheader" style="margin-top:0px;">
+            <span class="fs-title display-block">Profile</span>
+        </div>
+        <div layout="row" layout-align="space-around center" layout-md="column" layout-sm="column">
+            <div class="text-align-center">
+                <div class="avatar">
+                </div>
+            </div>
+            <div class="text-align-right">
+                <div layout="row" layout-align="space-around center" class="profilelines">
+                    <div flex="30" class="text-align-left label-setting-list">
+                        <span class="fs-subhead display-block">Name:</span>
+                    </div>
+                    <div flex="70" class="text-align-left settings-field-value">
+                        <span class="fs-subhead display-block">{{data.Name}}</span>
+                    </div>
+                </div>
+                <div layout="row" layout-align="space-around center" class="profilelines">
+                    <div flex="30" class="text-align-left label-setting-list">
+                        <span class="fs-subhead display-block">Primary email:</span>
+                    </div>
+                    <div flex="70" class="text-align-left settings-field-value">
+                        <span class="fs-subhead display-block">{{data.PrimaryEmail}}</span>
+                    </div>
+                </div>
+                <div layout="row" layout-align="space-around center" class="profilelines">
+                    <div flex="30" class="text-align-left label-setting-list">
+                        <span class="fs-subhead display-block">Title:</span>
+                    </div>
+                    <div flex="70" class="text-align-left settings-field-value">
+                        <span class="fs-subhead display-block">{{data.Title}}</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="fab" style="position:fixed; bottom:20px; right:20px;">
+            <button class="fab__primary btn btn--xl btn--deep-orange btn--fab" lx-ripple lx-tooltip="Add" tooltip-position="top" ng-click="editprofile()">
+                <i class="mdi mdi-pencil"></i>
+                <i class="mdi mdi-pencil"></i>
+            </button>
+        </div>
+    </div>
+    <lx-dialog class="card dialog dialog--m" style="width:400px !important; top:30% !important; margin-left:-200px" id="edit" auto-close="true">
+        <div class="dialog__header">
+            <div class="toolbar pl++" style="text-align:center !important; padding-bottom:0px !important">
+                <span class="toolbar__label tc-black fs-title">
+                    Editing profile
+                </span>
+            </div>
+            <div class="toolbar pl++" style="text-align:center !important; padding-bottom:0px !important; padding-top:0px !important; height:150px" layout="column">
+                <lx-text-field label="Name">
+                    <input type="text" id="nameinput" ng-model="nameinput">
+                </lx-text-field>
+                <lx-text-field label="Title">
+                    <input type="text" id="titleinput" ng-model="titleinput">
+                </lx-text-field>
+            </div>
+        </div>
+        <div class="dialog__actions" style="text-align:center !important; padding-top:0px !important;">
+            <button class="btn btn--m btn--deep-orange btn--raised" ng-click="acceptediting()" lx-ripple>Accept</button>
+            <button class="btn btn--m btn--red btn--flat" lx-ripple lx-dialog-close>Cancel</button>
+        </div>
+    </lx-dialog>
+</div>

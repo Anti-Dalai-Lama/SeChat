@@ -1,0 +1,221 @@
+﻿.landing-title{
+    font-size: 2.5rem;
+    font-weight: 500;
+    line-height: 50px;
+    letter-spacing: 1px; 
+    text-align:center; 
+    color:#FFF;
+    margin-left:5px;
+}
+
+.text1-title{
+    font-size: 2.5rem;
+    font-weight: 500;
+    line-height: 50px;
+    letter-spacing: 1px; 
+    text-align:center; 
+    color:#34C0FD;
+    margin-left:5px;
+}
+
+.text2-title{
+    font-size: 1.3rem;
+    font-weight: 500;
+    line-height: 30px;
+    letter-spacing: 1px; 
+    text-align:center; 
+    color:#34C0FD;
+    margin-left:5px;
+}
+
+
+.sector-title h2{
+    font: 300 30px "Open Sans", "open-sans", sans-serif;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 200;
+    font-stretch: normal;
+    color:#333C4E;
+    margin-top:20px;
+}
+
+.all-landing-header{
+    height:50px;
+    background-color:#34C0FD;/*E94C1B*/
+    width:100%
+}
+
+.landing-header{
+    height:50px;
+    width:1080px
+}
+
+.landing-header-logo{
+    width:50px;
+    height:50px;
+    background:url(../Content/logogo.png) no-repeat center center;
+    background-size:50px 50px;
+}
+
+.content-block{
+    height:300px;
+    width:1080px;
+}
+
+
+@media (max-width: 1080px) {
+    .landing-header{
+        height:50px;
+        width:800px
+    }
+
+    .content-block{
+        height:222px;
+        width:800px;
+        margin-top:30px;
+    }
+    .content-block-image{
+        background-size:400px 222px !important;
+    }
+    .content-if{
+        width:800px;
+        margin-top:50px;
+    }
+
+    .content-contact{
+        height:40px;
+        width:100%;
+    }
+
+    .content-contact-data{
+        height:50px;
+        width:100%;
+    }
+
+    .sector-title h2{
+        font: 300 25px "Open Sans", "open-sans", sans-serif;
+        margin-top:20px;
+    }
+
+    .sector-title p{
+        font-size: 1.3em;
+        line-height: 1.9em;
+        margin: 30px 0 3.125em 0;
+    }
+
+    .right-content{
+        padding-left:30px
+    }
+}
+
+@media (max-width: 720px) {
+    .all-landing-header{
+        height:35px;
+        width:100%
+    }
+    .landing-header{
+        height:35px;
+        width:100%;
+    }
+    .landing-header-logo{
+        width:35px;
+        height:35px;
+        background-size:35px 35px;
+    }
+    .landing-title{
+        font-size: 2.0rem;
+        line-height: 35px;
+    }
+    .landing-video{
+        font-size: 1.7rem;
+        margin-top:10px !important;
+    }
+
+    .landing-video2{
+        font-size: 0.8rem;
+    }
+    video {
+      width: 300px    !important;
+      height: 169px   !important;
+    }
+    .video-box{
+        height:169px;
+        width:300px;
+        z-index:1
+    }
+    .video-opacity-block{
+        z-index:5;
+        position: absolute;
+        top: 35px;
+        width: 300px;
+        height:169px;
+        background-color:#000;
+        opacity:0.1;
+    }
+    .video-content-block{
+        z-index:5;
+        position: absolute;
+        top: 35px;
+        width: 300px;
+        height:169px;
+    }
+    .content-block{
+        height:97px;
+        width:350px;
+        margin-top:30px;
+    }
+    .content-block-image{
+        background-size:175px 97px !important;
+    }
+    .content-if{
+        width:100%;
+        margin-top:30px;
+    }
+
+    .content-contact{
+        height:30px;
+        width:100%;
+    }
+
+    .content-contact-data{
+        height:30px;
+        width:100%;
+    }
+
+    .sector-title h2{
+        font: 300 14px "Open Sans", "open-sans", sans-serif;
+        margin-top:5px;
+    }
+
+    .sector-title p{
+        font-size: 0.6em;
+        line-height: 1.9em;
+        margin: 5px 0 3.125em 0;
+    }
+
+    .right-content{
+        padding-left:10px
+    }
+
+    .final-text{
+        font: 15px "Open Sans", "open-sans", sans-serif;
+    }
+
+    .contact-me{
+        font: 20px "Open Sans", "open-sans", sans-serif;
+    }
+
+    .contact-email{
+        font: 14px "Open Sans", "open-sans", sans-serif;
+    }
+
+    .social-icon{
+        background-size:30px 30px !important;
+        width:30px !important;
+        height:30px !important;
+    }
+
+    .become{
+        font-size: 0.8rem !important;
+    }
+}
